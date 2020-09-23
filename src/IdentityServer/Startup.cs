@@ -16,6 +16,9 @@ using Microsoft.AspNetCore.Identity;
 using IdentityServer.Data;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
 using System.Threading.Tasks;
+using Microsoft.IdentityModel.Protocols.OpenIdConnect;
+using IdentityServer4.Services;
+using IdentityServer.Interfaces;
 
 namespace IdentityServer
 {
@@ -47,13 +50,18 @@ namespace IdentityServer
                 .AddEntityFrameworkStores<IdentityDbContext>()
                 .AddDefaultTokenProviders();
 
+            services.AddTransient<IProfileService, MyProfileService>();
+
             services.AddAuthentication()
                 .AddOpenIdConnect("azuread", "Azure AD", options => Configuration.Bind("AzureAd", options));
+
+
 
             services.Configure<OpenIdConnectOptions>("azuread", options =>
             {
                 options.Scope.Add("openid");
                 options.Scope.Add("profile");
+                options.Scope.Add("email");
                 options.Events = new OpenIdConnectEvents()
                 {
                     OnRedirectToIdentityProviderForSignOut = context =>
@@ -61,9 +69,33 @@ namespace IdentityServer
                         context.HandleResponse();
                         context.Response.Redirect("/Account/Logout");
                         return Task.FromResult(0);
+                    },
+                OnRedirectToIdentityProvider = context =>
+                {
+                    var login = context.Properties.GetParameter<string>(OpenIdConnectParameterNames.LoginHint);
+                    if (!string.IsNullOrWhiteSpace(login))
+                    {
+                        context.ProtocolMessage.LoginHint = login;
+                        context.ProtocolMessage.DomainHint = context.Properties.GetParameter<string>(
+                            OpenIdConnectParameterNames.DomainHint);
+
+                        // delete the login_hint and domainHint from the Properties when we are done otherwise
+                        // it will take up extra space in the cookie.
+                        context.Properties.Parameters.Remove(OpenIdConnectParameterNames.LoginHint);
+                        context.Properties.Parameters.Remove(OpenIdConnectParameterNames.DomainHint);
                     }
-                };
-            });
+
+                    // Additional claims
+                    if (context.Properties.Items.ContainsKey("claims"))
+                    {
+                        context.ProtocolMessage.SetParameter("claims",
+                            context.Properties.Items["claims"]);
+                    }
+
+                    return Task.FromResult(0);
+                }
+            };
+        });
 
 
 
