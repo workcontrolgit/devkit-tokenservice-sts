@@ -7,7 +7,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B5F08170-CA7
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "IdentityServer", "src\IdentityServer\IdentityServer.csproj", "{0A95E875-4CBE-4E81-B860-4CE48D97770B}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{28D02B11-DA66-4D74-9DF0-DAE7ACA84EDD}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{489A1DEE-51D9-43C3-A9C7-19B6703EFFB4}"
 	ProjectSection(SolutionItems) = preProject
 		README.md = README.md
 	EndProjectSection
@@ -42,6 +42,6 @@ Global
 		{0A95E875-4CBE-4E81-B860-4CE48D97770B} = {B5F08170-CA73-4289-A945-DCC2E594BFAF}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {5F7E79FD-DB3F-44CE-AE45-F2F8E1A3EDDA}
+		SolutionGuid = {E58AFAE6-778B-41F5-8D49-B2A05E210D5B}
 	EndGlobalSection
 EndGlobal

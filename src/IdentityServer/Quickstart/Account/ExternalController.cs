@@ -278,9 +278,35 @@ namespace IdentityServer
                 filtered.Add(new Claim(JwtClaimTypes.Email, email));
             }
 
+            // upn
+            var upn = claims.FirstOrDefault(x => x.Type == ClaimTypes.Upn)?.Value ??
+               claims.FirstOrDefault(x => x.Type == ClaimTypes.Upn)?.Value;
+            if (upn != null)
+            {
+                filtered.Add(new Claim(JwtClaimTypes.Subject, upn));
+            }
+            else 
+            {
+                upn = Guid.NewGuid().ToString();
+            }
+
+            // id
+            var id = claims.FirstOrDefault(x => x.Type == "http://schemas.microsoft.com/identity/claims/objectidentifier")?.Value ??
+               claims.FirstOrDefault(x => x.Type == "http://schemas.microsoft.com/identity/claims/objectidentifier")?.Value;
+            if (id != null)
+            {
+                filtered.Add(new Claim(JwtClaimTypes.Id, id));
+            }
+            else
+            {
+                id = Guid.NewGuid().ToString();
+            }
+
             var user = new ApplicationUser
             {
-                UserName = Guid.NewGuid().ToString(),
+                UserName = upn,
+                Email = email,
+                Id = id
             };
             var identityResult = await _userManager.CreateAsync(user);
             if (!identityResult.Succeeded) throw new Exception(identityResult.Errors.First().Description);
