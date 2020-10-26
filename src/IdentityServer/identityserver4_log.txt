@@ -22991,3 +22991,413 @@ System.Exception: User name '' is invalid, can only contain letters or digits.
 2020-09-15 06:56:58.685 -04:00 [INF] AuthenticationScheme: Identity.Application signed in.
 2020-09-15 06:56:58.686 -04:00 [INF] AuthenticationScheme: Identity.External signed out.
 2020-09-15 06:56:58.748 -04:00 [DBG] 0 persisted grants found for 8f4952c9-a891-49ac-95c5-6a8823b1038a
+2020-10-14 23:44:42.577 -04:00 [INF] Starting host...
+2020-10-14 23:44:44.438 -04:00 [INF] Starting IdentityServer4 version 3.1.4.0
+2020-10-14 23:44:44.562 -04:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2020-10-14 23:44:44.562 -04:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2020-10-14 23:44:44.563 -04:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2020-10-14 23:44:44.563 -04:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2020-10-14 23:44:44.563 -04:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2020-10-14 23:44:44.563 -04:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2020-10-14 23:44:44.815 -04:00 [DBG] Login Url: /Account/Login
+2020-10-14 23:44:44.816 -04:00 [DBG] Login Return Url Parameter: ReturnUrl
+2020-10-14 23:44:44.816 -04:00 [DBG] Logout Url: /Account/Logout
+2020-10-14 23:44:44.816 -04:00 [DBG] ConsentUrl Url: /consent
+2020-10-14 23:44:44.816 -04:00 [DBG] Consent Return Url Parameter: returnUrl
+2020-10-14 23:44:44.816 -04:00 [DBG] Error Url: /home/error
+2020-10-14 23:44:44.816 -04:00 [DBG] Error Id Parameter: errorId
+2020-10-25 20:28:22.299 -04:00 [INF] Starting host...
+2020-10-25 20:28:24.070 -04:00 [INF] Starting IdentityServer4 version 3.1.4.0
+2020-10-25 20:28:24.189 -04:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2020-10-25 20:28:24.189 -04:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2020-10-25 20:28:24.189 -04:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2020-10-25 20:28:24.189 -04:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2020-10-25 20:28:24.189 -04:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2020-10-25 20:28:24.189 -04:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2020-10-25 20:28:24.396 -04:00 [DBG] Login Url: /Account/Login
+2020-10-25 20:28:24.397 -04:00 [DBG] Login Return Url Parameter: ReturnUrl
+2020-10-25 20:28:24.397 -04:00 [DBG] Logout Url: /Account/Logout
+2020-10-25 20:28:24.397 -04:00 [DBG] ConsentUrl Url: /consent
+2020-10-25 20:28:24.397 -04:00 [DBG] Consent Return Url Parameter: returnUrl
+2020-10-25 20:28:24.397 -04:00 [DBG] Error Url: /home/error
+2020-10-25 20:28:24.397 -04:00 [DBG] Error Id Parameter: errorId
+2020-10-25 20:32:49.594 -04:00 [DBG] Request path /connect/token matched to endpoint type Token
+2020-10-25 20:32:49.607 -04:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2020-10-25 20:32:49.607 -04:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2020-10-25 20:32:49.610 -04:00 [DBG] Start token request.
+2020-10-25 20:32:49.612 -04:00 [DBG] Start client validation
+2020-10-25 20:32:49.614 -04:00 [DBG] Start parsing Basic Authentication secret
+2020-10-25 20:32:49.615 -04:00 [DBG] Start parsing for secret in post body
+2020-10-25 20:32:49.620 -04:00 [DBG] Parser found secret: PostBodySecretParser
+2020-10-25 20:32:49.620 -04:00 [DBG] Secret id found: 4X=nNv?Sgu$T
+2020-10-25 20:32:50.707 -04:00 [INF] {"ClientId":"4X=nNv?Sgu$T","Category":"Authentication","Name":"Client Authentication Failure","EventType":"Failure","Id":1011,"Message":"Unknown client","ActivityId":"80000002-0007-fe00-b63f-84710c7967bb","TimeStamp":"2020-10-26T00:32:50.0000000Z","ProcessId":14660,"LocalIpAddress":"::1:44354","RemoteIpAddress":"::1","$type":"ClientAuthenticationFailureEvent"}
+2020-10-25 20:32:50.711 -04:00 [ERR] No client with id '4X=nNv?Sgu$T' found. aborting
+2020-10-25 20:35:15.435 -04:00 [DBG] Request path /connect/token matched to endpoint type Token
+2020-10-25 20:35:15.444 -04:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2020-10-25 20:35:15.444 -04:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2020-10-25 20:35:15.444 -04:00 [DBG] Start token request.
+2020-10-25 20:35:15.444 -04:00 [DBG] Start client validation
+2020-10-25 20:35:15.444 -04:00 [DBG] Start parsing Basic Authentication secret
+2020-10-25 20:35:15.444 -04:00 [DBG] Start parsing for secret in post body
+2020-10-25 20:35:15.444 -04:00 [DBG] Parser found secret: PostBodySecretParser
+2020-10-25 20:35:15.444 -04:00 [DBG] Secret id found: client
+2020-10-25 20:35:15.487 -04:00 [INF] {"ClientId":"client","Category":"Authentication","Name":"Client Authentication Failure","EventType":"Failure","Id":1011,"Message":"Unknown client","ActivityId":"80000004-0007-fe00-b63f-84710c7967bb","TimeStamp":"2020-10-26T00:35:15.0000000Z","ProcessId":14660,"LocalIpAddress":"::1:44354","RemoteIpAddress":"::1","$type":"ClientAuthenticationFailureEvent"}
+2020-10-25 20:35:15.487 -04:00 [ERR] No client with id 'client' found. aborting
+2020-10-25 20:36:58.531 -04:00 [DBG] Request path /connect/token matched to endpoint type Token
+2020-10-25 20:36:58.547 -04:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2020-10-25 20:36:58.547 -04:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2020-10-25 20:36:58.547 -04:00 [DBG] Start token request.
+2020-10-25 20:36:58.547 -04:00 [DBG] Start client validation
+2020-10-25 20:36:58.547 -04:00 [DBG] Start parsing Basic Authentication secret
+2020-10-25 20:36:58.547 -04:00 [DBG] Start parsing for secret in post body
+2020-10-25 20:36:58.548 -04:00 [DBG] Parser found secret: PostBodySecretParser
+2020-10-25 20:36:58.548 -04:00 [DBG] Secret id found: devkit-clients-credential.employeeprofileapi
+2020-10-25 20:36:59.186 -04:00 [DBG] devkit-clients-credential.employeeprofileapi found in database: true
+2020-10-25 20:36:59.190 -04:00 [DBG] client configuration validation for client devkit-clients-credential.employeeprofileapi succeeded.
+2020-10-25 20:36:59.196 -04:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2020-10-25 20:36:59.196 -04:00 [DBG] Client validation success
+2020-10-25 20:36:59.197 -04:00 [INF] {"ClientId":"devkit-clients-credential.employeeprofileapi","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"80000005-0007-fe00-b63f-84710c7967bb","TimeStamp":"2020-10-26T00:36:59.0000000Z","ProcessId":14660,"LocalIpAddress":"::1:44354","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2020-10-25 20:36:59.199 -04:00 [DBG] Start token request validation
+2020-10-25 20:36:59.201 -04:00 [DBG] Start client credentials token request validation
+2020-10-25 20:36:59.287 -04:00 [DBG] Found [] identity scopes in database
+2020-10-25 20:36:59.380 -04:00 [DBG] Found ["app.api.employeeprofile.read","app.api.employeeprofile.write"] API scopes in database
+2020-10-25 20:36:59.412 -04:00 [DBG] Found [] identity scopes in database
+2020-10-25 20:36:59.435 -04:00 [DBG] Found ["app.api.employeeprofile.read","app.api.employeeprofile.write"] API scopes in database
+2020-10-25 20:36:59.437 -04:00 [DBG] devkit-clients-credential.employeeprofileapi credentials token request validation success
+2020-10-25 20:36:59.442 -04:00 [INF] Token request validation success, {"ClientId":"devkit-clients-credential.employeeprofileapi","ClientName":"Sample Client Credential Employee Profile API","GrantType":"client_credentials","Scopes":"app.api.employeeprofile.read app.api.employeeprofile.write","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"devkit-clients-credential.employeeprofileapi","client_secret":"***REDACTED***","grant_type":"client_credentials","scope":"app.api.employeeprofile.read app.api.employeeprofile.write"},"$type":"TokenRequestValidationLog"}
+2020-10-25 20:36:59.453 -04:00 [DBG] Getting claims for access token for client: devkit-clients-credential.employeeprofileapi
+2020-10-25 20:36:59.499 -04:00 [INF] {"ClientId":"devkit-clients-credential.employeeprofileapi","ClientName":"Sample Client Credential Employee Profile API","RedirectUri":null,"Endpoint":"Token","SubjectId":null,"Scopes":"app.api.employeeprofile.read app.api.employeeprofile.write","GrantType":"client_credentials","Tokens":[{"TokenType":"access_token","TokenValue":"****riwQ","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"80000005-0007-fe00-b63f-84710c7967bb","TimeStamp":"2020-10-26T00:36:59.0000000Z","ProcessId":14660,"LocalIpAddress":"::1:44354","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2020-10-25 20:36:59.500 -04:00 [DBG] Token request success.
+2020-10-25 20:42:23.872 -04:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2020-10-25 20:42:23.874 -04:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2020-10-25 20:42:23.874 -04:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2020-10-25 20:42:23.875 -04:00 [DBG] Start discovery request
+2020-10-25 20:42:24.227 -04:00 [DBG] Found ["roles","openid","profile","email","address","STSClientId_api","app.api.employeeprofile.read","app.api.employeeprofile.write","app.api.instantpos.read","app.api.instantpos.write"] as all scopes in database
+2020-10-25 20:42:56.063 -04:00 [DBG] Request path /connect/token matched to endpoint type Token
+2020-10-25 20:42:56.063 -04:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2020-10-25 20:42:56.063 -04:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2020-10-25 20:42:56.064 -04:00 [DBG] Start token request.
+2020-10-25 20:42:56.064 -04:00 [DBG] Start client validation
+2020-10-25 20:42:56.064 -04:00 [DBG] Start parsing Basic Authentication secret
+2020-10-25 20:42:56.064 -04:00 [DBG] Start parsing for secret in post body
+2020-10-25 20:42:56.064 -04:00 [DBG] Parser found secret: PostBodySecretParser
+2020-10-25 20:42:56.064 -04:00 [DBG] Secret id found: devkit-clients-credential.employeeprofileapi
+2020-10-25 20:42:56.195 -04:00 [DBG] devkit-clients-credential.employeeprofileapi found in database: true
+2020-10-25 20:42:56.195 -04:00 [DBG] client configuration validation for client devkit-clients-credential.employeeprofileapi succeeded.
+2020-10-25 20:42:56.196 -04:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2020-10-25 20:42:56.196 -04:00 [DBG] Client validation success
+2020-10-25 20:42:56.196 -04:00 [INF] {"ClientId":"devkit-clients-credential.employeeprofileapi","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"80000010-0009-ff00-b63f-84710c7967bb","TimeStamp":"2020-10-26T00:42:56.0000000Z","ProcessId":14660,"LocalIpAddress":"::1:44354","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2020-10-25 20:42:56.196 -04:00 [DBG] Start token request validation
+2020-10-25 20:42:56.196 -04:00 [DBG] Start client credentials token request validation
+2020-10-25 20:42:56.210 -04:00 [DBG] Found [] identity scopes in database
+2020-10-25 20:42:56.227 -04:00 [DBG] Found ["app.api.employeeprofile.read","app.api.employeeprofile.write"] API scopes in database
+2020-10-25 20:42:56.239 -04:00 [DBG] Found [] identity scopes in database
+2020-10-25 20:42:56.252 -04:00 [DBG] Found ["app.api.employeeprofile.read","app.api.employeeprofile.write"] API scopes in database
+2020-10-25 20:42:56.252 -04:00 [DBG] devkit-clients-credential.employeeprofileapi credentials token request validation success
+2020-10-25 20:42:56.252 -04:00 [INF] Token request validation success, {"ClientId":"devkit-clients-credential.employeeprofileapi","ClientName":"Sample Client Credential Employee Profile API","GrantType":"client_credentials","Scopes":"app.api.employeeprofile.read app.api.employeeprofile.write","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"devkit-clients-credential.employeeprofileapi","client_secret":"***REDACTED***","grant_type":"client_credentials","scope":"app.api.employeeprofile.read app.api.employeeprofile.write"},"$type":"TokenRequestValidationLog"}
+2020-10-25 20:42:56.252 -04:00 [DBG] Getting claims for access token for client: devkit-clients-credential.employeeprofileapi
+2020-10-25 20:42:56.254 -04:00 [INF] {"ClientId":"devkit-clients-credential.employeeprofileapi","ClientName":"Sample Client Credential Employee Profile API","RedirectUri":null,"Endpoint":"Token","SubjectId":null,"Scopes":"app.api.employeeprofile.read app.api.employeeprofile.write","GrantType":"client_credentials","Tokens":[{"TokenType":"access_token","TokenValue":"****SdnQ","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"80000010-0009-ff00-b63f-84710c7967bb","TimeStamp":"2020-10-26T00:42:56.0000000Z","ProcessId":14660,"LocalIpAddress":"::1:44354","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2020-10-25 20:42:56.254 -04:00 [DBG] Token request success.
+2020-10-25 20:43:51.107 -04:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://jwt.io
+2020-10-25 20:43:51.130 -04:00 [DBG] Origin https://jwt.io is allowed: false
+2020-10-25 20:43:51.131 -04:00 [WRN] CorsPolicyService did not allow origin: https://jwt.io
+2020-10-25 20:43:51.132 -04:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2020-10-25 20:43:51.132 -04:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2020-10-25 20:43:51.132 -04:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2020-10-25 20:43:51.132 -04:00 [DBG] Start discovery request
+2020-10-25 20:43:51.160 -04:00 [DBG] Found ["roles","openid","profile","email","address","STSClientId_api","app.api.employeeprofile.read","app.api.employeeprofile.write","app.api.instantpos.read","app.api.instantpos.write"] as all scopes in database
+2020-10-25 20:49:37.652 -04:00 [DBG] Request path /connect/token matched to endpoint type Token
+2020-10-25 20:49:37.653 -04:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2020-10-25 20:49:37.654 -04:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2020-10-25 20:49:37.654 -04:00 [DBG] Start token request.
+2020-10-25 20:49:37.654 -04:00 [DBG] Start client validation
+2020-10-25 20:49:37.654 -04:00 [DBG] Start parsing Basic Authentication secret
+2020-10-25 20:49:37.654 -04:00 [DBG] Start parsing for secret in post body
+2020-10-25 20:49:37.654 -04:00 [DBG] Parser found secret: PostBodySecretParser
+2020-10-25 20:49:37.654 -04:00 [DBG] Secret id found: devkit-clients-credential.employeeprofileapi
+2020-10-25 20:49:37.955 -04:00 [DBG] devkit-clients-credential.employeeprofileapi found in database: true
+2020-10-25 20:49:37.956 -04:00 [DBG] client configuration validation for client devkit-clients-credential.employeeprofileapi succeeded.
+2020-10-25 20:49:37.956 -04:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2020-10-25 20:49:37.956 -04:00 [DBG] Client validation success
+2020-10-25 20:49:37.956 -04:00 [INF] {"ClientId":"devkit-clients-credential.employeeprofileapi","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"80000005-0001-ff00-b63f-84710c7967bb","TimeStamp":"2020-10-26T00:49:37.0000000Z","ProcessId":14660,"LocalIpAddress":"::1:44354","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2020-10-25 20:49:37.956 -04:00 [DBG] Start token request validation
+2020-10-25 20:49:37.956 -04:00 [DBG] Start client credentials token request validation
+2020-10-25 20:49:37.976 -04:00 [DBG] Found [] identity scopes in database
+2020-10-25 20:49:37.992 -04:00 [DBG] Found ["app.api.employeeprofile.read","app.api.employeeprofile.write"] API scopes in database
+2020-10-25 20:49:38.004 -04:00 [DBG] Found [] identity scopes in database
+2020-10-25 20:49:38.025 -04:00 [DBG] Found ["app.api.employeeprofile.read","app.api.employeeprofile.write"] API scopes in database
+2020-10-25 20:49:38.025 -04:00 [DBG] devkit-clients-credential.employeeprofileapi credentials token request validation success
+2020-10-25 20:49:38.025 -04:00 [INF] Token request validation success, {"ClientId":"devkit-clients-credential.employeeprofileapi","ClientName":"Sample Client Credential Employee Profile API","GrantType":"client_credentials","Scopes":"app.api.employeeprofile.read app.api.employeeprofile.write","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"devkit-clients-credential.employeeprofileapi","client_secret":"***REDACTED***","grant_type":"client_credentials","scope":"app.api.employeeprofile.read app.api.employeeprofile.write"},"$type":"TokenRequestValidationLog"}
+2020-10-25 20:49:38.025 -04:00 [DBG] Getting claims for access token for client: devkit-clients-credential.employeeprofileapi
+2020-10-25 20:49:38.027 -04:00 [INF] {"ClientId":"devkit-clients-credential.employeeprofileapi","ClientName":"Sample Client Credential Employee Profile API","RedirectUri":null,"Endpoint":"Token","SubjectId":null,"Scopes":"app.api.employeeprofile.read app.api.employeeprofile.write","GrantType":"client_credentials","Tokens":[{"TokenType":"access_token","TokenValue":"****eTUA","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"80000005-0001-ff00-b63f-84710c7967bb","TimeStamp":"2020-10-26T00:49:38.0000000Z","ProcessId":14660,"LocalIpAddress":"::1:44354","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2020-10-25 20:49:38.027 -04:00 [DBG] Token request success.
+2020-10-25 20:57:45.229 -04:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2020-10-25 20:57:45.232 -04:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2020-10-25 20:57:45.232 -04:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2020-10-25 20:57:45.233 -04:00 [DBG] Start key discovery request
+2020-10-25 21:12:13.190 -04:00 [INF] Starting host...
+2020-10-25 21:12:14.288 -04:00 [INF] Starting IdentityServer4 version 3.1.4.0
+2020-10-25 21:12:14.372 -04:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2020-10-25 21:12:14.372 -04:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2020-10-25 21:12:14.372 -04:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2020-10-25 21:12:14.372 -04:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2020-10-25 21:12:14.372 -04:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2020-10-25 21:12:14.372 -04:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2020-10-25 21:12:14.531 -04:00 [DBG] Login Url: /Account/Login
+2020-10-25 21:12:14.532 -04:00 [DBG] Login Return Url Parameter: ReturnUrl
+2020-10-25 21:12:14.532 -04:00 [DBG] Logout Url: /Account/Logout
+2020-10-25 21:12:14.532 -04:00 [DBG] ConsentUrl Url: /consent
+2020-10-25 21:12:14.532 -04:00 [DBG] Consent Return Url Parameter: returnUrl
+2020-10-25 21:12:14.532 -04:00 [DBG] Error Url: /home/error
+2020-10-25 21:12:14.533 -04:00 [DBG] Error Id Parameter: errorId
+2020-10-25 21:12:21.759 -04:00 [DBG] Request path /connect/token matched to endpoint type Token
+2020-10-25 21:12:21.773 -04:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2020-10-25 21:12:21.773 -04:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2020-10-25 21:12:21.775 -04:00 [DBG] Start token request.
+2020-10-25 21:12:21.776 -04:00 [DBG] Start client validation
+2020-10-25 21:12:21.779 -04:00 [DBG] Start parsing Basic Authentication secret
+2020-10-25 21:12:21.780 -04:00 [DBG] Start parsing for secret in post body
+2020-10-25 21:12:21.785 -04:00 [DBG] Parser found secret: PostBodySecretParser
+2020-10-25 21:12:21.785 -04:00 [DBG] Secret id found: devkit-clients-credential.employeeprofileapi
+2020-10-25 21:12:23.361 -04:00 [DBG] devkit-clients-credential.employeeprofileapi found in database: true
+2020-10-25 21:12:23.366 -04:00 [DBG] client configuration validation for client devkit-clients-credential.employeeprofileapi succeeded.
+2020-10-25 21:12:23.372 -04:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2020-10-25 21:12:23.372 -04:00 [DBG] Client validation success
+2020-10-25 21:12:23.378 -04:00 [INF] {"ClientId":"devkit-clients-credential.employeeprofileapi","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"8000000b-000a-fe00-b63f-84710c7967bb","TimeStamp":"2020-10-26T01:12:23.0000000Z","ProcessId":13076,"LocalIpAddress":"::1:44354","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2020-10-25 21:12:23.383 -04:00 [DBG] Start token request validation
+2020-10-25 21:12:23.386 -04:00 [DBG] Start client credentials token request validation
+2020-10-25 21:12:23.456 -04:00 [DBG] Found [] identity scopes in database
+2020-10-25 21:12:23.533 -04:00 [DBG] Found ["app.api.employeeprofile.read","app.api.employeeprofile.write"] API scopes in database
+2020-10-25 21:12:23.555 -04:00 [DBG] Found [] identity scopes in database
+2020-10-25 21:12:23.570 -04:00 [DBG] Found ["app.api.employeeprofile.read","app.api.employeeprofile.write"] API scopes in database
+2020-10-25 21:12:23.573 -04:00 [DBG] devkit-clients-credential.employeeprofileapi credentials token request validation success
+2020-10-25 21:12:23.577 -04:00 [INF] Token request validation success, {"ClientId":"devkit-clients-credential.employeeprofileapi","ClientName":"Sample Client Credential Employee Profile API","GrantType":"client_credentials","Scopes":"app.api.employeeprofile.read app.api.employeeprofile.write","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"devkit-clients-credential.employeeprofileapi","client_secret":"***REDACTED***","grant_type":"client_credentials","scope":"app.api.employeeprofile.read app.api.employeeprofile.write"},"$type":"TokenRequestValidationLog"}
+2020-10-25 21:12:23.588 -04:00 [DBG] Getting claims for access token for client: devkit-clients-credential.employeeprofileapi
+2020-10-25 21:12:23.646 -04:00 [INF] {"ClientId":"devkit-clients-credential.employeeprofileapi","ClientName":"Sample Client Credential Employee Profile API","RedirectUri":null,"Endpoint":"Token","SubjectId":null,"Scopes":"app.api.employeeprofile.read app.api.employeeprofile.write","GrantType":"client_credentials","Tokens":[{"TokenType":"access_token","TokenValue":"****QT_g","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"8000000b-000a-fe00-b63f-84710c7967bb","TimeStamp":"2020-10-26T01:12:23.0000000Z","ProcessId":13076,"LocalIpAddress":"::1:44354","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2020-10-25 21:12:23.646 -04:00 [DBG] Token request success.
+2020-10-25 21:15:49.405 -04:00 [DBG] Request path /connect/token matched to endpoint type Token
+2020-10-25 21:15:49.412 -04:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2020-10-25 21:15:49.412 -04:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2020-10-25 21:15:49.412 -04:00 [DBG] Start token request.
+2020-10-25 21:15:49.412 -04:00 [DBG] Start client validation
+2020-10-25 21:15:49.412 -04:00 [DBG] Start parsing Basic Authentication secret
+2020-10-25 21:15:49.412 -04:00 [DBG] Start parsing for secret in post body
+2020-10-25 21:15:49.412 -04:00 [DBG] Parser found secret: PostBodySecretParser
+2020-10-25 21:15:49.412 -04:00 [DBG] Secret id found: devkit-clients-credential.employeeprofileapi
+2020-10-25 21:15:49.564 -04:00 [DBG] devkit-clients-credential.employeeprofileapi found in database: true
+2020-10-25 21:15:49.564 -04:00 [DBG] client configuration validation for client devkit-clients-credential.employeeprofileapi succeeded.
+2020-10-25 21:15:49.564 -04:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2020-10-25 21:15:49.564 -04:00 [DBG] Client validation success
+2020-10-25 21:15:49.565 -04:00 [INF] {"ClientId":"devkit-clients-credential.employeeprofileapi","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"80000032-0002-ff00-b63f-84710c7967bb","TimeStamp":"2020-10-26T01:15:49.0000000Z","ProcessId":13076,"LocalIpAddress":"::1:44354","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2020-10-25 21:15:49.565 -04:00 [DBG] Start token request validation
+2020-10-25 21:15:49.565 -04:00 [DBG] Start client credentials token request validation
+2020-10-25 21:15:49.580 -04:00 [DBG] Found [] identity scopes in database
+2020-10-25 21:15:49.591 -04:00 [DBG] Found ["app.api.employeeprofile.read","app.api.employeeprofile.write"] API scopes in database
+2020-10-25 21:15:49.603 -04:00 [DBG] Found [] identity scopes in database
+2020-10-25 21:15:49.618 -04:00 [DBG] Found ["app.api.employeeprofile.read","app.api.employeeprofile.write"] API scopes in database
+2020-10-25 21:15:49.619 -04:00 [DBG] devkit-clients-credential.employeeprofileapi credentials token request validation success
+2020-10-25 21:15:49.619 -04:00 [INF] Token request validation success, {"ClientId":"devkit-clients-credential.employeeprofileapi","ClientName":"Sample Client Credential Employee Profile API","GrantType":"client_credentials","Scopes":"app.api.employeeprofile.read app.api.employeeprofile.write","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"devkit-clients-credential.employeeprofileapi","client_secret":"***REDACTED***","grant_type":"client_credentials","scope":"app.api.employeeprofile.read app.api.employeeprofile.write"},"$type":"TokenRequestValidationLog"}
+2020-10-25 21:15:49.619 -04:00 [DBG] Getting claims for access token for client: devkit-clients-credential.employeeprofileapi
+2020-10-25 21:15:49.620 -04:00 [INF] {"ClientId":"devkit-clients-credential.employeeprofileapi","ClientName":"Sample Client Credential Employee Profile API","RedirectUri":null,"Endpoint":"Token","SubjectId":null,"Scopes":"app.api.employeeprofile.read app.api.employeeprofile.write","GrantType":"client_credentials","Tokens":[{"TokenType":"access_token","TokenValue":"****vNWA","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"80000032-0002-ff00-b63f-84710c7967bb","TimeStamp":"2020-10-26T01:15:49.0000000Z","ProcessId":13076,"LocalIpAddress":"::1:44354","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2020-10-25 21:15:49.620 -04:00 [DBG] Token request success.
+2020-10-25 21:19:15.183 -04:00 [DBG] Request path /connect/token matched to endpoint type Token
+2020-10-25 21:19:15.199 -04:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2020-10-25 21:19:15.199 -04:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2020-10-25 21:19:15.199 -04:00 [DBG] Start token request.
+2020-10-25 21:19:15.199 -04:00 [DBG] Start client validation
+2020-10-25 21:19:15.199 -04:00 [DBG] Start parsing Basic Authentication secret
+2020-10-25 21:19:15.199 -04:00 [DBG] Start parsing for secret in post body
+2020-10-25 21:19:15.200 -04:00 [DBG] Parser found secret: PostBodySecretParser
+2020-10-25 21:19:15.200 -04:00 [DBG] Secret id found: devkit-clients-credential.employeeprofileapi
+2020-10-25 21:19:15.332 -04:00 [DBG] devkit-clients-credential.employeeprofileapi found in database: true
+2020-10-25 21:19:15.332 -04:00 [DBG] client configuration validation for client devkit-clients-credential.employeeprofileapi succeeded.
+2020-10-25 21:19:15.332 -04:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2020-10-25 21:19:15.332 -04:00 [DBG] Client validation success
+2020-10-25 21:19:15.332 -04:00 [INF] {"ClientId":"devkit-clients-credential.employeeprofileapi","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"8000002a-0004-fb00-b63f-84710c7967bb","TimeStamp":"2020-10-26T01:19:15.0000000Z","ProcessId":13076,"LocalIpAddress":"::1:44354","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2020-10-25 21:19:15.332 -04:00 [DBG] Start token request validation
+2020-10-25 21:19:15.332 -04:00 [DBG] Start client credentials token request validation
+2020-10-25 21:19:15.346 -04:00 [DBG] Found [] identity scopes in database
+2020-10-25 21:19:15.361 -04:00 [DBG] Found ["app.api.employeeprofile.read","app.api.employeeprofile.write"] API scopes in database
+2020-10-25 21:19:15.373 -04:00 [DBG] Found [] identity scopes in database
+2020-10-25 21:19:15.385 -04:00 [DBG] Found ["app.api.employeeprofile.read","app.api.employeeprofile.write"] API scopes in database
+2020-10-25 21:19:15.385 -04:00 [DBG] devkit-clients-credential.employeeprofileapi credentials token request validation success
+2020-10-25 21:19:15.385 -04:00 [INF] Token request validation success, {"ClientId":"devkit-clients-credential.employeeprofileapi","ClientName":"Sample Client Credential Employee Profile API","GrantType":"client_credentials","Scopes":"app.api.employeeprofile.read app.api.employeeprofile.write","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"devkit-clients-credential.employeeprofileapi","client_secret":"***REDACTED***","grant_type":"client_credentials","scope":"app.api.employeeprofile.read app.api.employeeprofile.write"},"$type":"TokenRequestValidationLog"}
+2020-10-25 21:19:15.385 -04:00 [DBG] Getting claims for access token for client: devkit-clients-credential.employeeprofileapi
+2020-10-25 21:19:15.387 -04:00 [INF] {"ClientId":"devkit-clients-credential.employeeprofileapi","ClientName":"Sample Client Credential Employee Profile API","RedirectUri":null,"Endpoint":"Token","SubjectId":null,"Scopes":"app.api.employeeprofile.read app.api.employeeprofile.write","GrantType":"client_credentials","Tokens":[{"TokenType":"access_token","TokenValue":"****sHPw","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"8000002a-0004-fb00-b63f-84710c7967bb","TimeStamp":"2020-10-26T01:19:15.0000000Z","ProcessId":13076,"LocalIpAddress":"::1:44354","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2020-10-25 21:19:15.387 -04:00 [DBG] Token request success.
+2020-10-25 21:22:28.551 -04:00 [INF] AuthenticationScheme: Identity.Application was challenged.
+2020-10-25 21:22:35.577 -04:00 [DBG] CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2020-10-25 21:22:35.696 -04:00 [WRN] Invalid password for user 34903727-3397-4344-9875-47f5e36788d3.
+2020-10-25 21:22:35.697 -04:00 [WRN] User 34903727-3397-4344-9875-47f5e36788d3 failed to provide the correct password.
+2020-10-25 21:22:35.892 -04:00 [INF] {"Username":"admin","Endpoint":"UI","ClientId":null,"Category":"Authentication","Name":"User Login Failure","EventType":"Failure","Id":1001,"Message":"invalid credentials","ActivityId":"80000016-0002-fe00-b63f-84710c7967bb","TimeStamp":"2020-10-26T01:22:35.0000000Z","ProcessId":13076,"LocalIpAddress":"::1:44354","RemoteIpAddress":"::1","$type":"UserLoginFailureEvent"}
+2020-10-25 21:22:57.435 -04:00 [DBG] CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2020-10-25 21:22:57.454 -04:00 [WRN] Invalid password for user 34903727-3397-4344-9875-47f5e36788d3.
+2020-10-25 21:22:57.454 -04:00 [WRN] User 34903727-3397-4344-9875-47f5e36788d3 failed to provide the correct password.
+2020-10-25 21:22:57.547 -04:00 [INF] {"Username":"admin","Endpoint":"UI","ClientId":null,"Category":"Authentication","Name":"User Login Failure","EventType":"Failure","Id":1001,"Message":"invalid credentials","ActivityId":"80000012-0006-ff00-b63f-84710c7967bb","TimeStamp":"2020-10-26T01:22:57.0000000Z","ProcessId":13076,"LocalIpAddress":"::1:44354","RemoteIpAddress":"::1","$type":"UserLoginFailureEvent"}
+2020-10-25 21:23:16.238 -04:00 [DBG] CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2020-10-25 21:23:16.455 -04:00 [DBG] Augmenting SignInContext
+2020-10-25 21:23:16.456 -04:00 [DBG] Adding idp claim with value: local
+2020-10-25 21:23:16.456 -04:00 [DBG] Adding auth_time claim with value: 1603675396
+2020-10-25 21:23:16.461 -04:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2020-10-25 21:23:16.474 -04:00 [INF] {"Username":"admin","Provider":null,"ProviderUserId":null,"SubjectId":"34903727-3397-4344-9875-47f5e36788d3","DisplayName":"admin","Endpoint":"UI","ClientId":null,"Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"80000006-0000-fc00-b63f-84710c7967bb","TimeStamp":"2020-10-26T01:23:16.0000000Z","ProcessId":13076,"LocalIpAddress":"::1:44354","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2020-10-25 21:23:16.513 -04:00 [DBG] 3 persisted grants found for 34903727-3397-4344-9875-47f5e36788d3
+2020-10-25 21:23:16.659 -04:00 [DBG] STSClientId found in database: true
+2020-10-25 21:23:16.659 -04:00 [DBG] client configuration validation for client STSClientId succeeded.
+2020-10-25 21:23:16.674 -04:00 [DBG] Found ["roles","openid","profile","email"] identity scopes in database
+2020-10-25 21:23:16.698 -04:00 [DBG] Found [] API scopes in database
+2020-10-25 21:23:16.836 -04:00 [DBG] devkit-clients-spa.pkce found in database: true
+2020-10-25 21:23:16.837 -04:00 [DBG] client configuration validation for client devkit-clients-spa.pkce succeeded.
+2020-10-25 21:23:16.856 -04:00 [DBG] Found ["roles","openid","profile","email"] identity scopes in database
+2020-10-25 21:23:16.885 -04:00 [DBG] Found ["app.api.employeeprofile.read","app.api.employeeprofile.write"] API scopes in database
+2020-10-25 21:23:57.479 -04:00 [DBG] CORS request made for path: /Account/Logout from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2020-10-25 21:23:57.491 -04:00 [INF] AuthenticationScheme: Identity.Application signed out.
+2020-10-25 21:23:57.491 -04:00 [INF] AuthenticationScheme: Identity.External signed out.
+2020-10-25 21:23:57.491 -04:00 [INF] AuthenticationScheme: Identity.TwoFactorUserId signed out.
+2020-10-25 21:23:57.492 -04:00 [INF] {"SubjectId":"34903727-3397-4344-9875-47f5e36788d3","DisplayName":"admin","Category":"Authentication","Name":"User Logout Success","EventType":"Success","Id":1002,"Message":null,"ActivityId":"80000009-0004-ff00-b63f-84710c7967bb","TimeStamp":"2020-10-26T01:23:57.0000000Z","ProcessId":13076,"LocalIpAddress":"::1:44354","RemoteIpAddress":"::1","$type":"UserLogoutSuccessEvent"}
+2020-10-25 21:39:18.838 -04:00 [INF] Starting host...
+2020-10-25 21:39:19.841 -04:00 [INF] Starting IdentityServer4 version 3.1.4.0
+2020-10-25 21:39:19.925 -04:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2020-10-25 21:39:19.925 -04:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2020-10-25 21:39:19.925 -04:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2020-10-25 21:39:19.925 -04:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2020-10-25 21:39:19.925 -04:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2020-10-25 21:39:19.925 -04:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2020-10-25 21:39:20.095 -04:00 [DBG] Login Url: /Account/Login
+2020-10-25 21:39:20.095 -04:00 [DBG] Login Return Url Parameter: ReturnUrl
+2020-10-25 21:39:20.096 -04:00 [DBG] Logout Url: /Account/Logout
+2020-10-25 21:39:20.096 -04:00 [DBG] ConsentUrl Url: /consent
+2020-10-25 21:39:20.096 -04:00 [DBG] Consent Return Url Parameter: returnUrl
+2020-10-25 21:39:20.096 -04:00 [DBG] Error Url: /home/error
+2020-10-25 21:39:20.096 -04:00 [DBG] Error Id Parameter: errorId
+2020-10-25 21:39:34.132 -04:00 [DBG] Request path /connect/token matched to endpoint type Token
+2020-10-25 21:39:34.146 -04:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2020-10-25 21:39:34.146 -04:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2020-10-25 21:39:34.149 -04:00 [DBG] Start token request.
+2020-10-25 21:39:34.150 -04:00 [DBG] Start client validation
+2020-10-25 21:39:34.153 -04:00 [DBG] Start parsing Basic Authentication secret
+2020-10-25 21:39:34.154 -04:00 [DBG] Start parsing for secret in post body
+2020-10-25 21:39:34.161 -04:00 [DBG] Parser found secret: PostBodySecretParser
+2020-10-25 21:39:34.161 -04:00 [DBG] Secret id found: devkit-clients-credential.employeeprofileapi
+2020-10-25 21:39:35.612 -04:00 [DBG] devkit-clients-credential.employeeprofileapi found in database: true
+2020-10-25 21:39:35.617 -04:00 [DBG] client configuration validation for client devkit-clients-credential.employeeprofileapi succeeded.
+2020-10-25 21:39:35.622 -04:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2020-10-25 21:39:35.622 -04:00 [DBG] Client validation success
+2020-10-25 21:39:35.629 -04:00 [INF] {"ClientId":"devkit-clients-credential.employeeprofileapi","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"80000024-0008-fe00-b63f-84710c7967bb","TimeStamp":"2020-10-26T01:39:35.0000000Z","ProcessId":23044,"LocalIpAddress":"::1:44354","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2020-10-25 21:39:35.634 -04:00 [DBG] Start token request validation
+2020-10-25 21:39:35.636 -04:00 [DBG] Start client credentials token request validation
+2020-10-25 21:39:35.705 -04:00 [DBG] Found [] identity scopes in database
+2020-10-25 21:39:35.789 -04:00 [DBG] Found ["app.api.employeeprofile.read","app.api.employeeprofile.write"] API scopes in database
+2020-10-25 21:39:35.813 -04:00 [DBG] Found [] identity scopes in database
+2020-10-25 21:39:35.825 -04:00 [DBG] Found ["app.api.employeeprofile.read","app.api.employeeprofile.write"] API scopes in database
+2020-10-25 21:39:35.828 -04:00 [DBG] devkit-clients-credential.employeeprofileapi credentials token request validation success
+2020-10-25 21:39:35.834 -04:00 [INF] Token request validation success, {"ClientId":"devkit-clients-credential.employeeprofileapi","ClientName":"Sample Client Credential Employee Profile API","GrantType":"client_credentials","Scopes":"app.api.employeeprofile.read app.api.employeeprofile.write","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"devkit-clients-credential.employeeprofileapi","client_secret":"***REDACTED***","grant_type":"client_credentials","scope":"app.api.employeeprofile.read app.api.employeeprofile.write"},"$type":"TokenRequestValidationLog"}
+2020-10-25 21:39:35.847 -04:00 [DBG] Getting claims for access token for client: devkit-clients-credential.employeeprofileapi
+2020-10-25 21:39:35.904 -04:00 [INF] {"ClientId":"devkit-clients-credential.employeeprofileapi","ClientName":"Sample Client Credential Employee Profile API","RedirectUri":null,"Endpoint":"Token","SubjectId":null,"Scopes":"app.api.employeeprofile.read app.api.employeeprofile.write","GrantType":"client_credentials","Tokens":[{"TokenType":"access_token","TokenValue":"****rVGA","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"80000024-0008-fe00-b63f-84710c7967bb","TimeStamp":"2020-10-26T01:39:35.0000000Z","ProcessId":23044,"LocalIpAddress":"::1:44354","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2020-10-25 21:39:35.905 -04:00 [DBG] Token request success.
+2020-10-25 21:46:29.124 -04:00 [INF] Starting host...
+2020-10-25 21:46:30.134 -04:00 [INF] Starting IdentityServer4 version 3.1.4.0
+2020-10-25 21:46:30.217 -04:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2020-10-25 21:46:30.218 -04:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2020-10-25 21:46:30.218 -04:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2020-10-25 21:46:30.218 -04:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2020-10-25 21:46:30.218 -04:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2020-10-25 21:46:30.218 -04:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2020-10-25 21:46:30.381 -04:00 [DBG] Login Url: /Account/Login
+2020-10-25 21:46:30.382 -04:00 [DBG] Login Return Url Parameter: ReturnUrl
+2020-10-25 21:46:30.382 -04:00 [DBG] Logout Url: /Account/Logout
+2020-10-25 21:46:30.382 -04:00 [DBG] ConsentUrl Url: /consent
+2020-10-25 21:46:30.382 -04:00 [DBG] Consent Return Url Parameter: returnUrl
+2020-10-25 21:46:30.382 -04:00 [DBG] Error Url: /home/error
+2020-10-25 21:46:30.382 -04:00 [DBG] Error Id Parameter: errorId
+2020-10-25 21:46:39.545 -04:00 [DBG] Request path /connect/token matched to endpoint type Token
+2020-10-25 21:46:39.561 -04:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2020-10-25 21:46:39.561 -04:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2020-10-25 21:46:39.563 -04:00 [DBG] Start token request.
+2020-10-25 21:46:39.564 -04:00 [DBG] Start client validation
+2020-10-25 21:46:39.567 -04:00 [DBG] Start parsing Basic Authentication secret
+2020-10-25 21:46:39.568 -04:00 [DBG] Start parsing for secret in post body
+2020-10-25 21:46:39.575 -04:00 [DBG] Parser found secret: PostBodySecretParser
+2020-10-25 21:46:39.575 -04:00 [DBG] Secret id found: devkit-clients-credential.employeeprofileapi
+2020-10-25 21:46:41.063 -04:00 [DBG] devkit-clients-credential.employeeprofileapi found in database: true
+2020-10-25 21:46:41.068 -04:00 [DBG] client configuration validation for client devkit-clients-credential.employeeprofileapi succeeded.
+2020-10-25 21:46:41.074 -04:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2020-10-25 21:46:41.074 -04:00 [DBG] Client validation success
+2020-10-25 21:46:41.080 -04:00 [INF] {"ClientId":"devkit-clients-credential.employeeprofileapi","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"80000005-0007-ff00-b63f-84710c7967bb","TimeStamp":"2020-10-26T01:46:41.0000000Z","ProcessId":21696,"LocalIpAddress":"::1:44354","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2020-10-25 21:46:41.085 -04:00 [DBG] Start token request validation
+2020-10-25 21:46:41.088 -04:00 [DBG] Start client credentials token request validation
+2020-10-25 21:46:41.159 -04:00 [DBG] Found [] identity scopes in database
+2020-10-25 21:46:41.235 -04:00 [DBG] Found ["app.api.employeeprofile.read","app.api.employeeprofile.write"] API scopes in database
+2020-10-25 21:46:41.257 -04:00 [DBG] Found [] identity scopes in database
+2020-10-25 21:46:41.268 -04:00 [DBG] Found ["app.api.employeeprofile.read","app.api.employeeprofile.write"] API scopes in database
+2020-10-25 21:46:41.271 -04:00 [DBG] devkit-clients-credential.employeeprofileapi credentials token request validation success
+2020-10-25 21:46:41.276 -04:00 [INF] Token request validation success, {"ClientId":"devkit-clients-credential.employeeprofileapi","ClientName":"Sample Client Credential Employee Profile API","GrantType":"client_credentials","Scopes":"app.api.employeeprofile.read app.api.employeeprofile.write","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"devkit-clients-credential.employeeprofileapi","client_secret":"***REDACTED***","grant_type":"client_credentials","scope":"app.api.employeeprofile.read app.api.employeeprofile.write"},"$type":"TokenRequestValidationLog"}
+2020-10-25 21:46:41.286 -04:00 [DBG] Getting claims for access token for client: devkit-clients-credential.employeeprofileapi
+2020-10-25 21:46:41.342 -04:00 [INF] {"ClientId":"devkit-clients-credential.employeeprofileapi","ClientName":"Sample Client Credential Employee Profile API","RedirectUri":null,"Endpoint":"Token","SubjectId":null,"Scopes":"app.api.employeeprofile.read app.api.employeeprofile.write","GrantType":"client_credentials","Tokens":[{"TokenType":"access_token","TokenValue":"****wDTg","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"80000005-0007-ff00-b63f-84710c7967bb","TimeStamp":"2020-10-26T01:46:41.0000000Z","ProcessId":21696,"LocalIpAddress":"::1:44354","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2020-10-25 21:46:41.342 -04:00 [DBG] Token request success.
+2020-10-25 21:53:35.085 -04:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2020-10-25 21:53:35.089 -04:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2020-10-25 21:53:35.089 -04:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2020-10-25 21:53:35.090 -04:00 [DBG] Start discovery request
+2020-10-25 21:53:35.374 -04:00 [DBG] Found ["roles","openid","profile","email","address","STSClientId_api","app.api.employeeprofile.read","app.api.employeeprofile.write","app.api.instantpos.read","app.api.instantpos.write"] as all scopes in database
+2020-10-25 21:53:35.415 -04:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2020-10-25 21:53:35.416 -04:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2020-10-25 21:53:35.416 -04:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2020-10-25 21:53:35.417 -04:00 [DBG] Start key discovery request
+2020-10-25 22:02:02.287 -04:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2020-10-25 22:02:02.292 -04:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2020-10-25 22:02:02.293 -04:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2020-10-25 22:02:02.293 -04:00 [DBG] Start discovery request
+2020-10-25 22:02:02.512 -04:00 [DBG] Found ["roles","openid","profile","email","address","STSClientId_api","app.api.employeeprofile.read","app.api.employeeprofile.write","app.api.instantpos.read","app.api.instantpos.write"] as all scopes in database
+2020-10-25 22:02:02.647 -04:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2020-10-25 22:02:02.647 -04:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2020-10-25 22:02:02.647 -04:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2020-10-25 22:02:02.647 -04:00 [DBG] Start key discovery request
+2020-10-25 22:02:56.058 -04:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2020-10-25 22:02:56.068 -04:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2020-10-25 22:02:56.068 -04:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2020-10-25 22:02:56.068 -04:00 [DBG] Start discovery request
+2020-10-25 22:02:56.097 -04:00 [DBG] Found ["roles","openid","profile","email","address","STSClientId_api","app.api.employeeprofile.read","app.api.employeeprofile.write","app.api.instantpos.read","app.api.instantpos.write"] as all scopes in database
+2020-10-25 22:02:56.125 -04:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2020-10-25 22:02:56.126 -04:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2020-10-25 22:02:56.126 -04:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2020-10-25 22:02:56.126 -04:00 [DBG] Start key discovery request
+2020-10-25 22:03:45.987 -04:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2020-10-25 22:03:45.988 -04:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2020-10-25 22:03:45.988 -04:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2020-10-25 22:03:45.988 -04:00 [DBG] Start key discovery request
+2020-10-25 22:07:26.258 -04:00 [DBG] Request path /connect/token matched to endpoint type Token
+2020-10-25 22:07:26.258 -04:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2020-10-25 22:07:26.258 -04:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2020-10-25 22:07:26.258 -04:00 [DBG] Start token request.
+2020-10-25 22:07:26.259 -04:00 [DBG] Start client validation
+2020-10-25 22:07:26.259 -04:00 [DBG] Start parsing Basic Authentication secret
+2020-10-25 22:07:26.259 -04:00 [DBG] Start parsing for secret in post body
+2020-10-25 22:07:26.259 -04:00 [DBG] Parser found secret: PostBodySecretParser
+2020-10-25 22:07:26.260 -04:00 [DBG] Secret id found: devkit-clients-credential.instantpos
+2020-10-25 22:07:26.417 -04:00 [DBG] devkit-clients-credential.instantpos found in database: true
+2020-10-25 22:07:26.417 -04:00 [DBG] client configuration validation for client devkit-clients-credential.instantpos succeeded.
+2020-10-25 22:07:26.417 -04:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2020-10-25 22:07:26.417 -04:00 [DBG] Client validation success
+2020-10-25 22:07:26.418 -04:00 [INF] {"ClientId":"devkit-clients-credential.instantpos","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"80000002-000a-fd00-b63f-84710c7967bb","TimeStamp":"2020-10-26T02:07:26.0000000Z","ProcessId":21696,"LocalIpAddress":"::1:44354","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2020-10-25 22:07:26.418 -04:00 [DBG] Start token request validation
+2020-10-25 22:07:26.418 -04:00 [DBG] Start client credentials token request validation
+2020-10-25 22:07:26.432 -04:00 [DBG] Found [] identity scopes in database
+2020-10-25 22:07:26.445 -04:00 [DBG] Found ["app.api.instantpos.read","app.api.instantpos.write"] API scopes in database
+2020-10-25 22:07:26.457 -04:00 [DBG] Found [] identity scopes in database
+2020-10-25 22:07:26.477 -04:00 [DBG] Found ["app.api.instantpos.read","app.api.instantpos.write"] API scopes in database
+2020-10-25 22:07:26.477 -04:00 [DBG] devkit-clients-credential.instantpos credentials token request validation success
+2020-10-25 22:07:26.477 -04:00 [INF] Token request validation success, {"ClientId":"devkit-clients-credential.instantpos","ClientName":"Sample Client Credential InstantPOS","GrantType":"client_credentials","Scopes":"app.api.instantpos.read app.api.instantpos.write","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"devkit-clients-credential.instantpos","client_secret":"***REDACTED***","grant_type":"client_credentials","scope":"app.api.instantpos.read app.api.instantpos.write"},"$type":"TokenRequestValidationLog"}
+2020-10-25 22:07:26.477 -04:00 [DBG] Getting claims for access token for client: devkit-clients-credential.instantpos
+2020-10-25 22:07:26.478 -04:00 [INF] {"ClientId":"devkit-clients-credential.instantpos","ClientName":"Sample Client Credential InstantPOS","RedirectUri":null,"Endpoint":"Token","SubjectId":null,"Scopes":"app.api.instantpos.read app.api.instantpos.write","GrantType":"client_credentials","Tokens":[{"TokenType":"access_token","TokenValue":"****KJbQ","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"80000002-000a-fd00-b63f-84710c7967bb","TimeStamp":"2020-10-26T02:07:26.0000000Z","ProcessId":21696,"LocalIpAddress":"::1:44354","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2020-10-25 22:07:26.479 -04:00 [DBG] Token request success.
+2020-10-25 22:18:46.950 -04:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2020-10-25 22:18:46.950 -04:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2020-10-25 22:18:46.950 -04:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2020-10-25 22:18:46.950 -04:00 [DBG] Start discovery request
+2020-10-25 22:18:47.178 -04:00 [DBG] Found ["roles","openid","profile","email","address","STSClientId_api","app.api.employeeprofile.read","app.api.employeeprofile.write","app.api.instantpos.read","app.api.instantpos.write"] as all scopes in database
+2020-10-25 22:18:47.310 -04:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2020-10-25 22:18:47.310 -04:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2020-10-25 22:18:47.310 -04:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2020-10-25 22:18:47.310 -04:00 [DBG] Start key discovery request
+2020-10-25 22:46:30.441 -04:00 [INF] Removing 0 grants
+2020-10-25 22:46:30.458 -04:00 [INF] Removing 0 device flow codes

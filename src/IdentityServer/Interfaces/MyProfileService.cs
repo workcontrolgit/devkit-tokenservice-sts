@@ -19,19 +19,10 @@ namespace IdentityServer.Interfaces
             return Task.CompletedTask;
         }
 
-        //public Task GetProfileDataAsync(ProfileDataRequestContext context)
-        //{
-        //    throw new NotImplementedException();
-        //}
-
         public Task IsActiveAsync(IsActiveContext context)
         {
             return Task.CompletedTask;
         }
 
-        //public Task IsActiveAsync(IsActiveContext context)
-        //{
-        //    throw new NotImplementedException();
-        //}
     }
 }
