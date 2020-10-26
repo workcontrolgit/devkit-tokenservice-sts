@@ -23450,3 +23450,70 @@ System.Exception: User name '' is invalid, can only contain letters or digits.
 2020-10-25 22:53:22.502 -04:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
 2020-10-25 22:53:22.502 -04:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
 2020-10-25 22:53:22.503 -04:00 [DBG] Start key discovery request
+2020-10-25 23:44:06.069 -04:00 [INF] Starting host...
+2020-10-25 23:44:07.040 -04:00 [INF] Starting IdentityServer4 version 3.1.4.0
+2020-10-25 23:44:07.147 -04:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2020-10-25 23:44:07.147 -04:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2020-10-25 23:44:07.147 -04:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2020-10-25 23:44:07.147 -04:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2020-10-25 23:44:07.147 -04:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2020-10-25 23:44:07.147 -04:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2020-10-25 23:44:07.335 -04:00 [DBG] Login Url: /Account/Login
+2020-10-25 23:44:07.336 -04:00 [DBG] Login Return Url Parameter: ReturnUrl
+2020-10-25 23:44:07.336 -04:00 [DBG] Logout Url: /Account/Logout
+2020-10-25 23:44:07.336 -04:00 [DBG] ConsentUrl Url: /consent
+2020-10-25 23:44:07.336 -04:00 [DBG] Consent Return Url Parameter: returnUrl
+2020-10-25 23:44:07.336 -04:00 [DBG] Error Url: /home/error
+2020-10-25 23:44:07.336 -04:00 [DBG] Error Id Parameter: errorId
+2020-10-25 23:44:12.145 -04:00 [DBG] Request path /connect/token matched to endpoint type Token
+2020-10-25 23:44:12.158 -04:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2020-10-25 23:44:12.159 -04:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2020-10-25 23:44:12.161 -04:00 [DBG] Start token request.
+2020-10-25 23:44:12.162 -04:00 [DBG] Start client validation
+2020-10-25 23:44:12.164 -04:00 [DBG] Start parsing Basic Authentication secret
+2020-10-25 23:44:12.165 -04:00 [DBG] Start parsing for secret in post body
+2020-10-25 23:44:12.170 -04:00 [DBG] Parser found secret: PostBodySecretParser
+2020-10-25 23:44:12.170 -04:00 [DBG] Secret id found: devkit-clients-credential.instantpos
+2020-10-25 23:44:13.622 -04:00 [DBG] devkit-clients-credential.instantpos found in database: true
+2020-10-25 23:44:13.627 -04:00 [DBG] client configuration validation for client devkit-clients-credential.instantpos succeeded.
+2020-10-25 23:44:13.632 -04:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2020-10-25 23:44:13.632 -04:00 [DBG] Client validation success
+2020-10-25 23:44:13.639 -04:00 [INF] {"ClientId":"devkit-clients-credential.instantpos","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"80000019-000b-fe00-b63f-84710c7967bb","TimeStamp":"2020-10-26T03:44:13.0000000Z","ProcessId":19980,"LocalIpAddress":"::1:44354","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2020-10-25 23:44:13.644 -04:00 [DBG] Start token request validation
+2020-10-25 23:44:13.647 -04:00 [DBG] Start client credentials token request validation
+2020-10-25 23:44:13.719 -04:00 [DBG] Found [] identity scopes in database
+2020-10-25 23:44:13.794 -04:00 [DBG] Found ["app.api.instantpos.read","app.api.instantpos.write"] API scopes in database
+2020-10-25 23:44:13.817 -04:00 [DBG] Found [] identity scopes in database
+2020-10-25 23:44:13.827 -04:00 [DBG] Found ["app.api.instantpos.read","app.api.instantpos.write"] API scopes in database
+2020-10-25 23:44:13.829 -04:00 [DBG] devkit-clients-credential.instantpos credentials token request validation success
+2020-10-25 23:44:13.833 -04:00 [INF] Token request validation success, {"ClientId":"devkit-clients-credential.instantpos","ClientName":"Sample Client Credential InstantPOS","GrantType":"client_credentials","Scopes":"app.api.instantpos.read app.api.instantpos.write","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"devkit-clients-credential.instantpos","client_secret":"***REDACTED***","grant_type":"client_credentials","scope":"app.api.instantpos.read app.api.instantpos.write"},"$type":"TokenRequestValidationLog"}
+2020-10-25 23:44:13.844 -04:00 [DBG] Getting claims for access token for client: devkit-clients-credential.instantpos
+2020-10-25 23:44:13.973 -04:00 [INF] {"ClientId":"devkit-clients-credential.instantpos","ClientName":"Sample Client Credential InstantPOS","RedirectUri":null,"Endpoint":"Token","SubjectId":null,"Scopes":"app.api.instantpos.read app.api.instantpos.write","GrantType":"client_credentials","Tokens":[{"TokenType":"access_token","TokenValue":"****n94w","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"80000019-000b-fe00-b63f-84710c7967bb","TimeStamp":"2020-10-26T03:44:13.0000000Z","ProcessId":19980,"LocalIpAddress":"::1:44354","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2020-10-25 23:44:13.973 -04:00 [DBG] Token request success.
+2020-10-25 23:44:27.130 -04:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2020-10-25 23:44:27.132 -04:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2020-10-25 23:44:27.132 -04:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2020-10-25 23:44:27.133 -04:00 [DBG] Start discovery request
+2020-10-25 23:44:27.244 -04:00 [DBG] Found ["roles","openid","profile","email","address","STSClientId_api","app.api.employeeprofile.read","app.api.employeeprofile.write","app.api.instantpos.read","app.api.instantpos.write"] as all scopes in database
+2020-10-25 23:44:27.390 -04:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2020-10-25 23:44:27.391 -04:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2020-10-25 23:44:27.391 -04:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2020-10-25 23:44:27.392 -04:00 [DBG] Start key discovery request
+2020-10-25 23:45:52.184 -04:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2020-10-25 23:45:52.192 -04:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2020-10-25 23:45:52.193 -04:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2020-10-25 23:45:52.193 -04:00 [DBG] Start discovery request
+2020-10-25 23:45:52.231 -04:00 [DBG] Found ["roles","openid","profile","email","address","STSClientId_api","app.api.employeeprofile.read","app.api.employeeprofile.write","app.api.instantpos.read","app.api.instantpos.write"] as all scopes in database
+2020-10-25 23:45:52.356 -04:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2020-10-25 23:45:52.356 -04:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2020-10-25 23:45:52.356 -04:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2020-10-25 23:45:52.356 -04:00 [DBG] Start key discovery request
+2020-10-25 23:47:41.464 -04:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2020-10-25 23:47:41.473 -04:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2020-10-25 23:47:41.473 -04:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2020-10-25 23:47:41.473 -04:00 [DBG] Start discovery request
+2020-10-25 23:47:41.507 -04:00 [DBG] Found ["roles","openid","profile","email","address","STSClientId_api","app.api.employeeprofile.read","app.api.employeeprofile.write","app.api.instantpos.read","app.api.instantpos.write"] as all scopes in database
+2020-10-25 23:47:41.639 -04:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2020-10-25 23:47:41.640 -04:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2020-10-25 23:47:41.640 -04:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2020-10-25 23:47:41.640 -04:00 [DBG] Start key discovery request
