@@ -101,7 +101,6 @@ namespace IdentityServer
         });
 
 
-            var x509Certificate2 = GetCertificates(Environment, Configuration).GetAwaiter().GetResult();
 
             var builder = services.AddIdentityServer(options =>
             {
@@ -117,7 +116,6 @@ namespace IdentityServer
                     CookieSlidingExpiration = true
                 };
             })
-            .AddSigningCredential(x509Certificate2.ActiveCertificate)
             .AddConfigurationStore(options =>
             {
                 options.ConfigureDbContext = b => b.UseSqlServer(connectionString, sql => sql.MigrationsAssembly(migrationsAssembly));
@@ -129,8 +127,9 @@ namespace IdentityServer
             })
             .AddAspNetIdentity<ApplicationUser>();
 
-            // not recommended for production - you need to store your key material somewhere secure
-            builder.AddDeveloperSigningCredential();
+            // certificate to sign JWT
+            var x509Certificate2 = GetCertificates(Environment, Configuration).GetAwaiter().GetResult();
+            builder.AddSigningCredential(x509Certificate2.ActiveCertificate);
         }
 
         public void Configure(IApplicationBuilder app)
