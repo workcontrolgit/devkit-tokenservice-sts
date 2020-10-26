@@ -19,6 +19,9 @@ using System.Threading.Tasks;
 using Microsoft.IdentityModel.Protocols.OpenIdConnect;
 using IdentityServer4.Services;
 using IdentityServer.Interfaces;
+using System.Security.Cryptography.X509Certificates;
+using System.IO;
+using IdentityServer.Services;
 
 namespace IdentityServer
 {
@@ -124,8 +127,9 @@ namespace IdentityServer
             })
             .AddAspNetIdentity<ApplicationUser>();
 
-            // not recommended for production - you need to store your key material somewhere secure
-            builder.AddDeveloperSigningCredential();
+            // certificate to sign JWT
+            var x509Certificate2 = GetCertificates(Environment, Configuration).GetAwaiter().GetResult();
+            builder.AddSigningCredential(x509Certificate2.ActiveCertificate);
         }
 
         public void Configure(IApplicationBuilder app)
@@ -147,6 +151,28 @@ namespace IdentityServer
             {
                 endpoints.MapDefaultControllerRoute();
             });
+        }
+        private static async Task<(X509Certificate2 ActiveCertificate, X509Certificate2 SecondaryCertificate)> GetCertificates(IWebHostEnvironment environment, IConfiguration configuration)
+        {
+            var certificateConfiguration = new CertificateConfiguration
+            {
+                // Use an Azure key vault
+                CertificateNameKeyVault = configuration["CertificateNameKeyVault"], //"StsCert",
+                KeyVaultEndpoint = configuration["AzureKeyVaultEndpoint"], // "https://damienbod.vault.azure.net"
+
+                // Use a local store with thumbprint
+                //UseLocalCertStore = Convert.ToBoolean(configuration["UseLocalCertStore"]),
+                //CertificateThumbprint = configuration["CertificateThumbprint"],
+
+                // development certificate
+                DevelopmentCertificatePfx = Path.Combine(environment.ContentRootPath, "sts_dev_cert.pfx"),
+                DevelopmentCertificatePassword = "1234" //configuration["DevelopmentCertificatePassword"] //"1234",
+            };
+
+            (X509Certificate2 ActiveCertificate, X509Certificate2 SecondaryCertificate) certs = await CertificateService.GetCertificates(
+                certificateConfiguration).ConfigureAwait(false);
+
+            return certs;
         }
     }
 }
