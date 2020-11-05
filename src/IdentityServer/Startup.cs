@@ -22,6 +22,7 @@ using IdentityServer.Interfaces;
 using System.Security.Cryptography.X509Certificates;
 using System.IO;
 using IdentityServer.Services;
+using Microsoft.Extensions.Logging;
 
 namespace IdentityServer
 {
@@ -130,6 +131,16 @@ namespace IdentityServer
             // certificate to sign JWT
             var x509Certificate2 = GetCertificates(Environment, Configuration).GetAwaiter().GetResult();
             builder.AddSigningCredential(x509Certificate2.ActiveCertificate);
+
+            // https://stackoverflow.com/questions/43343672/not-able-to-enable-cors-for-identity-server-4-in-asp-net-core/63136404
+            services.AddSingleton<ICorsPolicyService>((container) => {
+                var logger = container.GetRequiredService<ILogger<DefaultCorsPolicyService>>();
+                return new DefaultCorsPolicyService(logger)
+                {
+                    AllowAll = true
+                };
+            });
+
         }
 
         public void Configure(IApplicationBuilder app)
