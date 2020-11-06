@@ -270,7 +270,7 @@ namespace IdentityServer
                 }
             }
 
-            // email
+            // email 
             var email = claims.FirstOrDefault(x => x.Type == JwtClaimTypes.Email)?.Value ??
                claims.FirstOrDefault(x => x.Type == ClaimTypes.Email)?.Value;
             if (email != null)
